@@ -1,0 +1,31 @@
+{
+  "name": "rubex_assignment_node_backend",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiumesh/rubex_assignment_node_backend.git"
+  },
+  "author": "umesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiumesh/rubex_assignment_node_backend/issues"
+  },
+  "homepage": "https://github.com/hiumesh/rubex_assignment_node_backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "messagebird": "^4.0.1",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
