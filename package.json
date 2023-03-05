@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Assignment",
   "main": "index.js",
+  "engines": {
+    "node" : "14.x"
+  },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
