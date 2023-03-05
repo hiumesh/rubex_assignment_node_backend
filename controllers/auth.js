@@ -17,6 +17,8 @@ const { default: mongoose } = require("mongoose");
 
 exports.createOrloginUser = async (req, res, next) => {
   try {
+    console.log(req.body);
+
     let { phoneNumber } = req.body;
 
     // check duplicate phone Number
@@ -89,7 +91,7 @@ exports.resendOtp = async (req, res, next) => {
 
 exports.verifyPhoneOtp = async (req, res, next) => {
   try {
-
+    console.log(req.body);
     const { otp, userId } = req.body;
     if (!otp) {
       next( {status: 400, message: OTP_NOT_PROVIDED } );
