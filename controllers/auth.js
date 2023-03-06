@@ -126,6 +126,7 @@ exports.verifyPhoneOtp = async (req, res, next) => {
         token,
         userId: user._id,
         profileSetupCompleted: user.profileSetupCompleted,
+        tokenExpiryDate: new Date(new Date().getTime() + (12 * 60 * 60 * 1000)).toISOString(),
       },
     });
 
